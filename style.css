@@ -313,3 +313,34 @@ body {
     color: var(--PRIMARY-400);
     font-size: 1.4rem;
 }
+
+
+/* LOGOUT MODAL */
+
+.account-modal{
+    position: absolute;
+    right: 1.8rem;
+    top: 3.8rem;
+    width: 13rem;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+
+    display: none;
+    background-color: var(--WHITE);
+    border: 1px solid var(--WHITE);
+    box-shadow: 0 1px 4px 0 var(--OFF-WHITE);
+}
+
+.account-modal::before{
+    content: "";
+    position: absolute;
+    top:-1.6rem;
+    right:0rem;
+    border-width: 15px;
+    border-style: solid;
+    border-color: transparent var(--WHITE) transparent transparent;
+}
+
+.account:hover .account-modal{
+    display: block;
+}
