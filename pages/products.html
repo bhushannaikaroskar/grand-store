@@ -8,43 +8,304 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="/style.css">
 </head>
-<body class="ecom-body">
-    <nav class="ecom-nav navbar box-shaow-100 p-2_5 p-y-1">
-        <div class="nav-logo">
-            <img src="/assets/landing/grand-logo.png" alt="">
-        </div>
+<body class="grand-body grid-products">
+    <nav class="grand-nav navbar box-shadow-100 p-2_5 p-y-1">
+        <a class="nav-logo" href="/">
+            <img src="/assets/landing/grand-logo.png" alt="logo">
+        </a>
         <ul class="list list-inline">
-            <li class="  flex flex-shrink-1 align-items-center">
+            <li class="  flex flex-shrink-1p p-x-2 align-items-center">
                 <div class="nav-search-container">
                     <span class="material-icons font-x-large nav-search-icon">search</span>
                     <input type="search" class="input-field nav-search input-rounded" placeholder="Search">
                 </div>
             </li>
             <li class="flex align-items-center">
-                <button class="btn btn-link-secondary justify-content-start font-medium">
-                    Account
-                </button>
-            </li>
-            <li class="flex align-items-center">
-                <button class="btn btn-link-secondary justify-content-start  nav-item">
+                <a class="btn btn-link-secondary justify-content-start font-color-gray" target href="wishlist.html">
                     <div class="badge-container flex flex-column">
                         <span class="material-icons font-x-large">favorite_border</span>
                     </div>
-                </button>
+                </a>
             </li>
             <li class="flex align-items-center">
-                <button class="btn btn-link-secondary justify-content-start">
+                <a class="btn btn-link-secondary justify-content-start font-color-gray" href="cart.html">
                     <div class="badge-container flex flex-column">
                         <span class="material-icons font-x-large">shopping_cart</span>
-                        <span class="badge">7</span>
                     </div>
-                </button>
+                </a>
+            </li>
+            <li class="flex align-items-center">
+                <a class="btn btn-link-secondary justify-content-start font-medium  font-color-gray">
+                    Account
+                </a>
             </li>
         </ul>
     </nav>
 
-    <main class="ecom-main">
+    <aside class="grand-filter sidebar">
+        <ul class="list">
+            <div class="grand-filter-header">
+                <h2 class="fw-700 p-y-2">Filters</h2>
+                <button class="btn btn-link-primary font-small">CLEAR ALL</button>
+            </div>
+            <li class="list-item">
+                <h3 class="p-y-1">Sort</h3>
+                <ul class="list">
+                    <li class="list-item p-x-0 "> 
+                        <label><input type="radio" name="sort"> Low To High</label>
+                    </li>
+                    <li class="list-item p-x-0"> 
+                        <label><input type="radio" name="sort"> High To Low</label>
+                    </li>
+                    <li class="list-item p-x-0"> 
+                        <label><input type="radio" name="sort"> Popularity</label>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="list-item">
+                <h3 class="p-y-1">Categories</h3>
+                <ul class="list">
+                    <li class="list-item p-x-0 "> 
+                        <label><input type="checkbox" name="board"> Chess Boards </label>
+                    </li>
+                    <li class="list-item p-x-0"> 
+                        <label><input type="checkbox" name="accessories"> Chess Accessories</label>
+                    </li>
+                </ul>
+            </li>
+            <li class="list-item">
+                <h3 class="p-y-1">Ratings</h3>
+                <ul class="list">
+                    <li class="list-item p-x-0"> 
+                        <label><input type="radio" name="ratings"> 4 star & Above</label>
+                    </li>
+                    <li class="list-item p-x-0"> 
+                        <label><input type="radio" name="ratings"> 3 star & Above</label>
+                    </li>
+                    <li class="list-item p-x-0"> 
+                        <label><input type="radio" name="ratings"> 2 star & Above</label>
+                    </li>
+                    <li class="list-item p-x-0"> 
+                        <label><input type="radio" name="ratings"> 1 star & Above</label>
+                    </li>
+                </ul>
+            </li>
+            <li class="list-item">
+                <h3 class="p-y-1">Price</h3>
+                <div class="grand-slider-wrapper">
+                    <div class="slider-range">
+                        <label >0</label>
+                        <label >5000</label>
+                    </div>
+                    <input type="range" value="1000" min="0" max="5000" class="grand-slider">
+
+                </div>
+            </li>
+        </ul>
+    </aside>
+
+    <main class="grand-main">
+        <h2>Showing All Products</h2>
+        <div class="products-list">
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img class="card-img" src="/assets/products/chess-product-3.jpeg" alt="card-image">
+                </div>
+                <div class="card-content-wrapper">
+                    <div class="card-content">
+                        <h2 class="card-title">Chess Pieces </h2>
+                        <div class="card-description">Complete set of 32 chess pieces, Meet all tournament standard.</div>
+                    </div>
+                    <div class="card-cta">
+                        <div class="card-price">
+                            <span class="card-discount-price">Rs 1200</span>
+                            <div class="card-price-details">
+                                <span class="card-original-price">Rs 1400</span>
+                                <span class="card-discount-percentage">14% off</span>
+                            </div>
+                        </div>
+                        <div class="card-buttons flex-stretch">
+                            <button class="btn btn-default card-btn">Add to Cart</button>
+                            <button class="btn btn-outline card-btn flex-grow-1">WishList</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img class="card-img" src="/assets/products/chess-product-1.jpeg" alt="card-image">
+                </div>
+                <div class="card-content-wrapper">
+                    <div class="card-content">
+                        <h2 class="card-title">Wooden Board </h2>
+                        <div class="card-description">Handcrafted by artisans of India </div>
+                    </div>
+                    <div class="card-cta">
+                        <div class="card-price">
+                            <span class="card-discount-price">Rs 2499</span>
+                            <div class="card-price-details">
+                                <span class="card-original-price">Rs 2999</span>
+                                <span class="card-discount-percentage">20% off</span>
+                            </div>
+                        </div>
+                        <div class="card-buttons flex-stretch">
+                            <button class="btn btn-default card-btn">Add to Cart</button>
+                            <button class="btn btn-outline card-btn flex-grow-1">WishList</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img class="card-img" src="/assets/products/chess-product-4.jpeg" alt="card-image">
+                </div>
+                <div class="card-content-wrapper">
+                    <div class="card-content">
+                        <h2 class="card-title">Magnetic Board </h2>
+                        <div class="card-description">Specially designed Magnetic board. special edition travel chess set</div>
+                    </div>
+                    <div class="card-cta">
+                        <div class="card-price">
+                            <span class="card-discount-price">Rs 900</span>
+                            <div class="card-price-details">
+                                <span class="card-original-price">Rs 999</span>
+                                <span class="card-discount-percentage">10% off</span>
+                            </div>
+                        </div>
+                        <div class="card-buttons flex-stretch">
+                            <button class="btn btn-default card-btn">Add to Cart</button>
+                            <button class="btn btn-outline card-btn flex-grow-1">WishList</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img class="card-img" src="/assets/products/chess-product-2.jpeg" alt="card-image">
+                </div>
+                <div class="card-content-wrapper">
+                    <div class="card-content">
+                        <h2 class="card-title">Analog Clock</h2>
+                        <div class="card-description">Chess Clock has many timer rules and under each rule you can select a unique program that is suited to your game.</div>
+                    </div>
+                    <div class="card-cta">
+                        <div class="card-price">
+                            <span class="card-discount-price">Rs 500</span>
+                            <div class="card-price-details">
+                                <span class="card-original-price">Rs 600</span>
+                                <span class="card-discount-percentage">20% off</span>
+                            </div>
+                        </div>
+                        <div class="card-buttons flex-stretch">
+                            <button class="btn btn-default card-btn">Add to Cart</button>
+                            <button class="btn btn-outline card-btn flex-grow-1">WishList</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img class="card-img" src="/assets/products/chess-product-3.jpeg" alt="card-image">
+                </div>
+                <div class="card-content-wrapper">
+                    <div class="card-content">
+                        <h2 class="card-title">Chess Pieces </h2>
+                        <div class="card-description">Complete set of 32 chess pieces, Meet all tournament standard.</div>
+                    </div>
+                    <div class="card-cta">
+                        <div class="card-price">
+                            <span class="card-discount-price">Rs 1200</span>
+                            <div class="card-price-details">
+                                <span class="card-original-price">Rs 1400</span>
+                                <span class="card-discount-percentage">14% off</span>
+                            </div>
+                        </div>
+                        <div class="card-buttons flex-stretch">
+                            <button class="btn btn-default card-btn">Add to Cart</button>
+                            <button class="btn btn-outline card-btn flex-grow-1">WishList</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img class="card-img" src="/assets/products/chess-product-1.jpeg" alt="card-image">
+                </div>
+                <div class="card-content-wrapper">
+                    <div class="card-content">
+                        <h2 class="card-title">Wooden Board </h2>
+                        <div class="card-description">Handcrafted by artisans of India </div>
+                    </div>
+                    <div class="card-cta">
+                        <div class="card-price">
+                            <span class="card-discount-price">Rs 2499</span>
+                            <div class="card-price-details">
+                                <span class="card-original-price">Rs 2999</span>
+                                <span class="card-discount-percentage">20% off</span>
+                            </div>
+                        </div>
+                        <div class="card-buttons flex-stretch">
+                            <button class="btn btn-default card-btn">Add to Cart</button>
+                            <button class="btn btn-outline card-btn flex-grow-1">WishList</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img class="card-img" src="/assets/products/chess-product-4.jpeg" alt="card-image">
+                </div>
+                <div class="card-content-wrapper">
+                    <div class="card-content">
+                        <h2 class="card-title">Magnetic Board </h2>
+                        <div class="card-description">Specially designed Magnetic board. special edition travel chess set</div>
+                    </div>
+                    <div class="card-cta">
+                        <div class="card-price">
+                            <span class="card-discount-price">Rs 900</span>
+                            <div class="card-price-details">
+                                <span class="card-original-price">Rs 999</span>
+                                <span class="card-discount-percentage">10% off</span>
+                            </div>
+                        </div>
+                        <div class="card-buttons flex-stretch">
+                            <button class="btn btn-default card-btn">Add to Cart</button>
+                            <button class="btn btn-outline card-btn flex-grow-1">WishList</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img class="card-img" src="/assets/products/chess-product-2.jpeg" alt="card-image">
+                </div>
+                <div class="card-content-wrapper">
+                    <div class="card-content">
+                        <h2 class="card-title">Analog Clock</h2>
+                        <div class="card-description">Chess Clock has many timer rules and under each rule you can select a unique program that is suited to your game.</div>
+                    </div>
+                    <div class="card-cta">
+                        <div class="card-price">
+                            <span class="card-discount-price">Rs 500</span>
+                            <div class="card-price-details">
+                                <span class="card-original-price">Rs 600</span>
+                                <span class="card-discount-percentage">20% off</span>
+                            </div>
+                        </div>
+                        <div class="card-buttons flex-stretch">
+                            <button class="btn btn-default card-btn">Add to Cart</button>
+                            <button class="btn btn-outline card-btn flex-grow-1">WishList</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </main>
+    <footer class="grand-footer">
+        <h4 class="text-align-center">Made with  &lt;/&gt;  by Bhushan Naik</h4>
+    </footer>
     
     <script src="/app.js"></script>
 </body>
