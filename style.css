@@ -267,3 +267,20 @@ body {
     align-items: center;
 }
 
+/* ------------------  WISHLIST  --------------------- */
+
+.wishlist-header {
+    color: var(--OFF-BLACK);
+    text-align: center;
+    margin: 2rem 0 3rem;
+}
+
+.wishlist-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: auto;
+    max-width: 120rem;
+    width: 100%;
+}
