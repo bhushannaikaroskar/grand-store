@@ -224,4 +224,63 @@ body {
     background-color: var(--PRIMARY-400);
 }
 
-/* CART */
+/* ----------------CART------------------------- */
+
+/* ADD THIS VALUE TO UTILITY CLASS LATER */
+.width-45 {
+    width: 45rem;
+}
+
+.quantity-wrapper {
+    display: flex;
+    gap: 2rem;
+}
+
+.quantity-cta-wrapper {
+    display: flex;
+    gap: 1rem;
+}
+
+.quantity-display {
+    background-color: var(--OFF-WHITE);
+    padding: 2px 8px;
+    border-radius: 3px;
+}
+
+.button-round {
+    border: 1px solid var(--LIGHT-GREY);
+    padding: 3px;
+}
+
+.order-checkout {
+    padding: 3rem;
+    background-color: var(--WHITE);
+    border-radius: 1rem;
+    min-width: 30rem;
+    border: 1px solid var(--LIGHT-GREY);
+    margin: 0 2rem;
+}
+
+.order-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ------------------  WISHLIST  --------------------- */
+
+.wishlist-header {
+    color: var(--OFF-BLACK);
+    text-align: center;
+    margin: 2rem 0 3rem;
+}
+
+.wishlist-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: auto;
+    max-width: 120rem;
+    width: 100%;
+}

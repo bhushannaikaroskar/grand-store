@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body class="grand-body">
+    <nav class="grand-nav navbar box-shadow-100 p-2_5 p-y-1">
+        <a class="nav-logo" href="/">
+            <img src="/assets/landing/grand-logo.png" alt="logo">
+        </a>
+        <ul class="list list-inline">
+            <li class="  flex flex-shrink-1p p-x-2 align-items-center">
+                <div class="nav-search-container">
+                    <span class="material-icons font-x-large nav-search-icon">search</span>
+                    <input type="search" class="input-field nav-search input-rounded" placeholder="Search">
+                </div>
+            </li>
+            <li class="flex align-items-center">
+                <a class="btn btn-link-secondary justify-content-start font-color-gray" target="_blank" href="/pages/wishlist.html">
+                    <div class="badge-container flex flex-column">
+                        <span class="material-icons font-x-large">favorite_border</span>
+                    </div>
+                </a>
+            </li>
+            <li class="flex align-items-center">
+                <a class="btn btn-link-secondary justify-content-start font-color-gray" href="/pages/cart.html">
+                    <div class="badge-container flex flex-column">
+                        <span class="material-icons font-x-large">shopping_cart</span>
+                    </div>
+                </a>
+            </li>
+            <li class="flex align-items-center">
+                <a class="btn btn-link-secondary justify-content-start font-medium  font-color-gray">
+                    Account
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+   
+
+    <main class="grand-main">
+        <div class="flex align-items-start justify-content-center">
+            <ul class="list">
+                <li class="list-item">
+                    <div class="card card-horizontal width-45">
+                        <div class="card-img-wrapper">
+                            <img class="card-img" src="/assets/products/chess-product-1.jpeg" alt="card-image">
+                        </div>
+                        <div class="card-content-wrapper">
+                            <div class="card-content">
+                                <h2 class="card-title">Wooden Board</h2>
+                            </div>
+                            <div class="card-cta">
+                                <div class="card-price">
+                                    <span class="card-discount-price">Rs 900</span>
+                                    <div class="card-price-details">
+                                        <span class="card-original-price"> Rs 999</span>
+                                        <span class="card-discount-percentage"> 10% off</span>
+                                    </div>
+                                </div>
+                                <div class="quantity-wrapper fw-600">
+                                    <p>Quantity</p>
+                                    <div class="quantity-cta-wrapper flex align-items-center">
+                                        <button class="btn btn-icon button-round p-0 p-x-0_5 ">
+                                            <span class="material-icons font-large">remove</span>
+                                        </button>
+                                        <span class="quantity-display fw-600 font-large">1</span>
+                                        <button class="btn btn-icon button-round p-0 p-x-0_5">
+                                            <span class="material-icons font-large">add</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="card-buttons flex-column">
+                                    <button class="btn btn-outline card-btn flex-grow-1">WishList</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <div class="card card-horizontal width-45">
+                        <div class="card-img-wrapper">
+                            <img class="card-img" src="/assets/products/chess-product-1.jpeg" alt="card-image">
+                        </div>
+                        <div class="card-content-wrapper">
+                            <div class="card-content">
+                                <h2 class="card-title">Chess Pieces</h2>
+                            </div>
+                            <div class="card-cta">
+                                <div class="card-price">
+                                    <span class="card-discount-price">Rs 1200</span>
+                                    <div class="card-price-details">
+                                        <span class="card-original-price"> Rs 1399</span>
+                                        <span class="card-discount-percentage"> 14% off</span>
+                                    </div>
+                                </div>
+                                <div class="quantity-wrapper fw-600">
+                                    <p>Quantity</p>
+                                    <div class="quantity-cta-wrapper flex align-items-center">
+                                        <button class="btn btn-icon button-round p-0 p-x-0_5 ">
+                                            <span class="material-icons font-large">remove</span>
+                                        </button>
+                                        <span class="quantity-display fw-600 font-large">1</span>
+                                        <button class="btn btn-icon button-round p-0 p-x-0_5">
+                                            <span class="material-icons font-large">add</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="card-buttons flex-column">
+                                    <button class="btn btn-outline card-btn flex-grow-1">WishList</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="order-checkout ">
+                <div class="order-header">
+                    <h2 class="fw-600 p-y-1 ">Order Summary</h2>
+                </div>
+                <hr>
+                <ul class="list p-y-1">
+                    <li class="list-item order-item">
+                        <p class="">Total Price</p>
+                        <p class="fw-500">Rs 2398</p>
+                    </li>
+                    <li class="list-item order-item">
+                        <p class="">Discount</p>
+                        <p class="fw-500 font-primary">Rs 298</p>
+                    </li>
+                    <li class="list-item order-item">
+                        <p class="">Delivery Charges</p>
+                        <p class="fw-500">Rs 99</p>
+                    </li>
+                </ul>
+                <hr>
+                <div class="order-item p-y-1">
+                    <h3 class="fw-600">Total Amount</h3>
+                    <h3 class="fw-600">Rs 99</h3>
+                </div>
+                <div class="flex p-y-2_5">
+                    <button class="btn btn-primary flex-grow-1">Place Order</button>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    <footer class="grand-footer">
+        <h4 class="text-align-center">Made with  &lt;/&gt;  by Bhushan Naik</h4>
+    </footer>
+    
+    <script src="/app.js"></script>
+</body>
+</html>
