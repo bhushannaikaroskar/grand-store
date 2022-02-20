@@ -1,0 +1,149 @@
+
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+@import url(https://chess-ui.netlify.app/components/components.css);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    --COLOR-SHADOW-4: #1b1b1b9d;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* LANDING PAGE */
+
+.nav {
+    display: flex;
+}
+
+.box-shadow-100 {
+    box-shadow: 0 5px 2.5rem 2px var(--PRIMARY-50);
+}
+
+/* DOCUMENTATION */
+
+.grand-body {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+        " navbar navbar"
+        " main main";
+    background-color: var(--COLOR-SHADOW-PRIMARY-50);
+    min-height: 100vh;
+    max-height: 100vh;
+}
+
+.grand-nav {
+    position: sticky;
+    top: 0;
+    grid-area: navbar;
+    z-index: 2;
+}
+
+.grand-sidebar {
+    grid-area: sidebar;
+    overflow-y: scroll;
+}
+
+.grand-sidebar::-webkit-scrollbar {
+    display: none;
+}
+
+.grand-main {
+    grid-area: main;
+    padding: 2rem;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 0.6rem;
+    height: 0.6rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--PRIMARY-400);
+    border-radius: 99px;
+}
+
+::selection {
+    color: var(--WHITE);
+    background-color: var(--PRIMARY-400);
+}
+
+/* Category section and carousel */
+
+.category {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.carousel {
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.trending {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1rem 0;
+}
+
+/* CARDS */
+
+.img-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+
+    width: 100%;
+    height: 20rem;
+    max-width: 40rem;
+    min-width: 25rem;
+    flex-basis: 35rem;
+    border-radius: 1rem;
+
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease-in;
+}
+
+.img-card:hover {
+    transform: scale(1.03);
+}
+
+.card-overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+
+    top: 0;
+    height: 100%;
+    width: 100%;
+    padding: 2rem;
+
+    background-color: var(--COLOR-SHADOW-4);
+    color: var(--OFF-WHITE);
+    backdrop-filter: blur(1px);
+    transition: backdrop-filter 0.7s ease;
+}
+
+.card-overlay:hover {
+    background-color: var(--COLOR-SHADOW-3);
+}
