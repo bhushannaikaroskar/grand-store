@@ -1,4 +1,3 @@
-
 @import url(https://fonts.googleapis.com/icon?family=Material+Icons);
 @import url(https://chess-ui.netlify.app/components/components.css);
 * {
@@ -16,6 +15,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    background-color: var(--COLOR-SHADOW-PRIMARY-50);
+}
+
 /* LANDING PAGE */
 
 .nav {
@@ -23,7 +26,7 @@ html {
 }
 
 .box-shadow-100 {
-    box-shadow: 0 5px 2.5rem 2px var(--PRIMARY-50);
+    box-shadow: 0 3px 1rem -2px var(--PRIMARY-50);
 }
 
 /* DOCUMENTATION */
@@ -32,10 +35,11 @@ html {
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto 1fr;
+    grid-template-rows: auto 1fr auto;
     grid-template-areas:
         " navbar navbar"
-        " main main";
+        " main main"
+        "footer footer";
     background-color: var(--COLOR-SHADOW-PRIMARY-50);
     min-height: 100vh;
     max-height: 100vh;
@@ -60,7 +64,12 @@ html {
 .grand-main {
     grid-area: main;
     padding: 2rem;
-    overflow-y: scroll;
+}
+
+.grand-footer {
+    grid-area: footer;
+    background-color: var(--PRIMARY-200);
+    padding: 2rem;
 }
 
 ::-webkit-scrollbar {
@@ -89,6 +98,7 @@ html {
 }
 
 .carousel {
+    height: 65vh;
     position: relative;
     border-radius: 1rem;
     overflow: hidden;
@@ -147,3 +157,71 @@ html {
 .card-overlay:hover {
     background-color: var(--COLOR-SHADOW-3);
 }
+
+/* GRID FOR PRODUCT DISPLAY */
+
+.grid-products {
+    display: grid;
+    grid-template-columns: 25rem 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "navbar navbar"
+        "sidebar main"
+        "footer footer";
+}
+
+/* PRODUCT LIST DISPLAY */
+
+.products-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+/* PRODUCT FILTER */
+
+.grand-filter {
+    background-color: var(--WHITE);
+    padding: 0 2rem;
+}
+
+.grand-filter-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+/* CUSTOM SLIDER */
+
+.grand-slider-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.slider-range {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+.grand-slider {
+    display: flex;
+    align-items: center;
+    appearance: none;
+    background-color: var(--PRIMARY-50);
+    height: 8px;
+    border-radius: 99px;
+}
+
+.grand-slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 99px;
+    background-color: var(--PRIMARY-400);
+}
+
+/* CART */
