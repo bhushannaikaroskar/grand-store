@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body class="grand-body">
+    <nav class="grand-nav navbar box-shadow-100 p-2_5 p-y-1">
+        <a class="nav-logo" href="/">
+            <img src="/assets/landing/grand-logo.png" alt="logo">
+        </a>
+        <ul class="list list-inline">
+            <li class="  flex flex-shrink-1p p-x-2 align-items-center">
+                <div class="nav-search-container">
+                    <span class="material-icons font-x-large nav-search-icon">search</span>
+                    <input type="search" class="input-field nav-search input-rounded" placeholder="Search">
+                </div>
+            </li>
+            <li class="flex align-items-center">
+                <a class="btn btn-link-secondary justify-content-start font-color-gray" href="/pages/wishlist.html">
+                    <div class="badge-container flex flex-column">
+                        <span class="material-icons font-x-large">favorite</span>
+                    </div>
+                </a>
+            </li>
+            <li class="flex align-items-center">
+                <a class="btn btn-link-secondary justify-content-start font-color-gray" target="_blank" href="/pages/cart.html">
+                    <div class="badge-container flex flex-column">
+                        <span class="material-icons font-x-large">shopping_cart</span>
+                    </div>
+                </a>
+            </li>
+            <li class="flex align-items-center">
+                <a class="btn btn-link-secondary justify-content-start font-medium  font-color-gray" href="/pages/login.html">
+                    <div class="badge-container flex flex-column">
+                        <span class="material-icons font-x-large">account_circle</span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="grand-main">
+        <div class="flex justify-content-center align-items-center h-100">
+            <div class="auth-container ">
+                <h2 class="text-align-center font-black">Signup</h2>
+                <div class="input-wrapper p-y-1 w-100">
+                    <label for="email" class="input-label fw-600">Email:</label>
+                    <input id="email" type="text" class="input-field">
+                </div>
+                <div class="input-wrapper p-y-1 w-100">
+                    <label for="password" class="input-label fw-600">Password:</label>
+                    <input id="password" type="password" class="input-field">
+                </div>
+                <div class="flex justify-content-between w-100 p-y-1">
+                    <label class="font-small fw-500 flex align-items-center">
+                        <input type="checkbox" name="show-password"> <span class="p-0_5"> </span> I accept all Terms and Conditions
+                    </label>
+                </div>
+                <div class="p-1"></div>
+                <button class="btn btn-primary w-100">Create New Account</button>
+                <div class="flex justify-content-center w-100 p-y-1 text-align-center">
+                    <a class="btn btn-link-secondary" href="/pages/login.html"> Already have an Account <span class="material-icons font-x-large">chevron_right</span></a>
+                    
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <footer class="grand-footer">
+        <h4 class="text-align-center">Made with &lt;/&gt; by Bhushan Naik</h4>
+    </footer>
+    
+    <script src="/app.js"></script>
+</body>
+</html>

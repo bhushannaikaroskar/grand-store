@@ -68,7 +68,7 @@ body {
 
 .grand-footer {
     grid-area: footer;
-    background-color: var(--PRIMARY-200);
+    background-color: var(--PRIMARY-50);
     padding: 2rem;
 }
 
@@ -283,4 +283,33 @@ body {
     margin: auto;
     max-width: 120rem;
     width: 100%;
+}
+
+
+/* -------------------  AUTHENTICATION  ----------------- */
+
+/* LATER PUT THIS IN UTILITY CLASS */
+.font-black{
+    color: var(--OFF-BLACK);
+}
+
+.auth-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-grow: 0;
+
+    max-width: 45rem;
+    width:100%;
+    padding:4rem 5rem;
+    background-color: var(--WHITE);
+    border-radius: 1rem;
+
+    box-shadow: 0 5px 1rem 0px var(--LIGHT-GREY);
+}
+
+.button-link{
+    color: var(--PRIMARY-400);
+    font-size: 1.4rem;
 }
