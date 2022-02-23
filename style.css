@@ -282,6 +282,15 @@ html[data-theme="dark"] .grand-footer{
     align-items: center;
 }
 
+.coupon{
+    text-transform: uppercase;
+}
+
+
+.margin-2{
+    margin: 2rem 0;
+}
+
 /* ------------------  WISHLIST  --------------------- */
 
 .wishlist-header {
