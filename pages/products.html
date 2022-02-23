@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/style.css">
 </head>
 <body class="grand-body grid-products">
-    <nav class="grand-nav navbar box-shadow-100 p-2_5 p-y-1">
+    <nav class="grand-nav navbar navbar-responsive box-shadow-100 p-2_5 p-y-1">
         <a class="nav-logo" href="/">
             <img src="/assets/landing/grand-logo.png" alt="logo">
         </a>
@@ -38,12 +38,24 @@
                     <span class="material-icons font-x-large">dark_mode</span>
                 </div>
             </button>
+            <button id="filter" class="nav-hamburger btn btn-link-secondary justify-content-start font-medium  font-color-gray" href="/pages/login.html">
+                <div class="badge-container flex flex-column">
+                    <span class="material-icons">
+                        filter_alt
+                        </span>
+                </div>
+            </button>
+            <button id="menu" class="nav-hamburger btn btn-link-secondary justify-content-start font-medium  font-color-gray" href="/pages/login.html">
+                <div class="badge-container flex flex-column">
+                    <span class="material-icons font-x-large">menu</span>
+                </div>
+            </button>
         </div>
     </nav>
     
 
     
-    <aside class="grand-filter sidebar">
+    <aside class="grand-filter sidebar sidebar-hidden">
         <ul class="list">
             <div class="grand-filter-header">
                 <h2 class="font-black fw-700 p-y-2">Filters</h2>
@@ -309,5 +321,6 @@
     </footer>
     
     <script src="/app.js"></script>
+    <script src="/responsive.js"></script>
 </body>
 </html>
