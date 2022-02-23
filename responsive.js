@@ -8,7 +8,3 @@ filterButton.addEventListener("click",()=>{
     ? sidebar.classList.remove("sidebar-hidden") 
     :sidebar.classList.add("sidebar-hidden")
 })
-
-arrayOfListItems.forEach((element)=>{
-    element.addEventListener("click",(e)=>sidebar.classList.add("sidebar-hidden"))
-})
