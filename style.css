@@ -13,10 +13,20 @@
 
 html {
     scroll-behavior: smooth;
+    color: var(--OFF-BLACK);
 }
 
 body {
     background-color: var(--COLOR-SHADOW-PRIMARY-50);
+}
+
+html[data-theme="dark"] body{
+    background-color: var(--OFF-WHITE);
+    --WHITE: #111111
+}
+
+html[data-theme="dark"] .auth-container{
+    box-shadow: 0 5px 1rem 0px var(--OFF-WHITE);
 }
 
 /* LANDING PAGE */
@@ -26,7 +36,7 @@ body {
 }
 
 .box-shadow-100 {
-    box-shadow: 0 3px 1rem -2px var(--PRIMARY-50);
+    box-shadow: 0 3px 1rem -2px var(--COLOR-SHADOW-PRIMARY-50);
 }
 
 /* DOCUMENTATION */
@@ -68,8 +78,13 @@ body {
 
 .grand-footer {
     grid-area: footer;
-    background-color: var(--PRIMARY-50);
+    background-color: var(--COLOR-SHADOW-PRIMARY-400);
     padding: 2rem;
+    color: var(--OFF-BLACK);
+}
+
+html[data-theme="dark"] .grand-footer{
+    background-color: var(--COLOR-SHADOW-PRIMARY-400);
 }
 
 ::-webkit-scrollbar {
@@ -149,7 +164,7 @@ body {
     padding: 2rem;
 
     background-color: var(--COLOR-SHADOW-4);
-    color: var(--OFF-WHITE);
+    color: var(--COLOR-TEXT-WHITE);
     backdrop-filter: blur(1px);
     transition: backdrop-filter 0.7s ease;
 }
@@ -341,4 +356,12 @@ body {
 
 .account:hover .account-modal {
     display: block;
+}
+
+/* RESPONSIVE CSS */
+
+@media only screen and (max-width:480px){
+    :root{
+        font-size: 50%;
+    }
 }

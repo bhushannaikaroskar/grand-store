@@ -13,52 +13,49 @@
         <a class="nav-logo" href="/">
             <img src="/assets/landing/grand-logo.png" alt="logo">
         </a>
-        <ul class="list list-inline">
-            <li class="  flex flex-shrink-1p p-x-2 align-items-center">
-                <div class="nav-search-container">
-                    <span class="material-icons font-x-large nav-search-icon">search</span>
-                    <input type="search" class="input-field nav-search input-rounded" placeholder="Search">
+        <div class="nav-search-container">
+            <span class="material-icons font-x-large nav-search-icon">search</span>
+            <input type="search" class="input-field nav-search input-rounded" placeholder="Search">
+        </div>
+        <div class="nav-items">
+            <a class="btn btn-link-secondary justify-content-start font-color-gray" href="/pages/wishlist.html">
+                <div class="badge-container flex flex-column">
+                    <span class="material-icons font-x-large">favorite_border</span>
                 </div>
-            </li>
-            <li class="flex align-items-center">
-                <a class="btn btn-link-secondary justify-content-start font-color-gray" href="/pages/wishlist.html">
-                    <div class="badge-container flex flex-column">
-                        <span class="material-icons font-x-large">favorite_border</span>
-                    </div>
-                </a>
-            </li>
-            <li class="flex align-items-center">
-                <a class="btn btn-link-secondary justify-content-start font-color-gray" target="_blank" href="/pages/cart.html">
-                    <div class="badge-container flex flex-column">
-                        <span class="material-icons font-x-large">shopping_cart</span>
-                    </div>
-                </a>
-            </li>
-            <li class="flex align-items-center">
-                <div class="badge-container account flex flex-column">
-                    <a class="btn btn-link-secondary justify-content-start font-medium  font-color-gray" target="_blank" href="/pages/login.html">
-                        <span class="material-icons font-x-large">account_circle</span>
-                    </a>
-                    <div class="account-modal">
-                        <ul class="list ">
-                            <li class="list-item p-y-0">
-                                <a class="btn btn-link-secondary" href="/pages/login.html"> Profile </a>
-                            </li>
-                            <li class="list-item p-y-0">
-                                <a class="btn btn-link-secondary" href="/pages/wishlist.html"> Saved </a>
-                            </li>
-                            <li class="list-item p-y-0">
-                                <a class="btn btn-link-secondary" href="#"> Address </a>
-                            </li>
-                            <hr>
-                            <li class="list-item p-y-0">
-                                <a class="btn btn-link-secondary font-error" > Logout </a>
-                            </li>
-                        </ul>
-                    </div>
+            </a>
+            <a class="btn btn-link-secondary justify-content-start font-color-gray" href="/pages/cart.html">
+                <div class="badge-container flex flex-column">
+                    <span class="material-icons font-x-large">shopping_cart</span>
                 </div>
-            </li>
-        </ul>
+            </a>
+            <div class="badge-container account flex flex-column">
+                <a class="btn btn-link-secondary justify-content-start font-medium  font-color-gray" target="_blank" href="/pages/login.html">
+                    <span class="material-icons font-x-large">account_circle</span>
+                </a>
+                <div class="account-modal">
+                    <ul class="list ">
+                        <li class="list-item p-y-0">
+                            <a class="btn btn-link-secondary" href="/pages/login.html"> Profile </a>
+                        </li>
+                        <li class="list-item p-y-0">
+                            <a class="btn btn-link-secondary" href="/pages/wishlist.html"> Saved </a>
+                        </li>
+                        <li class="list-item p-y-0">
+                            <a class="btn btn-link-secondary" href="#"> Address </a>
+                        </li>
+                        <hr>
+                        <li class="list-item p-y-0">
+                            <a class="btn btn-link-secondary font-error" > Logout </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button id="toggle-theme" class="btn btn-link-secondary justify-content-start font-medium  font-color-gray" href="/pages/login.html">
+                <div class="badge-container flex flex-column">
+                    <span class="material-icons font-x-large">dark_mode</span>
+                </div>
+            </button>
+        </div>
     </nav>
 
     <main class="grand-main">

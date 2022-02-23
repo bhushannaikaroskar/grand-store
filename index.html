@@ -12,42 +12,39 @@
         <div class="nav-logo">
             <img src="/assets/landing/grand-logo.png" alt="logo">
         </div>
-        <ul class="list list-inline">
-            <li class="  flex flex-shrink-1p p-x-2 align-items-center">
-                <div class="nav-search-container">
-                    <span class="material-icons font-x-large nav-search-icon">search</span>
-                    <input type="search" class="input-field nav-search input-rounded" placeholder="Search">
+        <div class="nav-search-container">
+            <span class="material-icons font-x-large nav-search-icon">search</span>
+            <input type="search" class="input-field nav-search input-rounded" placeholder="Search">
+        </div>
+        <div class="nav-items">
+            <a class="btn btn-link-secondary justify-content-start font-color-gray" href="/pages/wishlist.html">
+                <div class="badge-container flex flex-column">
+                    <span class="material-icons font-x-large">favorite_border</span>
                 </div>
-            </li>
-            <li class="flex align-items-center">
-                <a class="btn btn-link-secondary justify-content-start font-color-gray" target="_blank" href="/pages/wishlist.html">
-                    <div class="badge-container flex flex-column">
-                        <span class="material-icons font-x-large">favorite_border</span>
-                    </div>
-                </a>
-            </li>
-            <li class="flex align-items-center">
-                <a class="btn btn-link-secondary justify-content-start font-color-gray" target="_blank" href="/pages/cart.html">
-                    <div class="badge-container flex flex-column">
-                        <span class="material-icons font-x-large">shopping_cart</span>
-                    </div>
-                </a>
-            </li>
-            <li class="flex align-items-center">
-                <a class="btn btn-link-secondary justify-content-start font-medium  font-color-gray" target="_blank" href="/pages/login.html">
-                    <div class="badge-container flex flex-column">
-                        <span class="material-icons font-x-large">account_circle</span>
-                    </div>
-                </a>
-            </li>
-        </ul>
+            </a>
+            <a class="btn btn-link-secondary justify-content-start font-color-gray" href="/pages/cart.html">
+                <div class="badge-container flex flex-column">
+                    <span class="material-icons font-x-large">shopping_cart</span>
+                </div>
+            </a>
+            <a class="btn btn-link-secondary justify-content-start font-medium  font-color-gray" href="/pages/login.html">
+                <div class="badge-container flex flex-column">
+                    <span class="material-icons font-x-large">account_circle</span>
+                </div>
+            </a>
+            <button id="toggle-theme" class="btn btn-link-secondary justify-content-start font-medium  font-color-gray" href="/pages/login.html">
+                <div class="badge-container flex flex-column">
+                    <span class="material-icons font-x-large">dark_mode</span>
+                </div>
+            </button>
+        </div>
     </nav>
 
     <main class="grand-main">
         <div class="carousel img-wrap w-100">
             <img class="img" loading="lazy" src="/assets/carousel-image/chess-2.jpg" alt="product-image">
             <div class="card-overlay">
-                <h2 class="font-xx-large">Upto 30% OFF on Chess Products</h2>
+                <h2 class="text-align-center font-xx-large">Upto 30% OFF on Chess Products</h2>
                 <h4>Limited Period</h4>
                 <div class="p-2"></div>
                 <a class="btn btn-primary fw-700 p-2 p-y-1 font-x-large" target="_blank" href="/pages/products.html">Shop Now</a>
