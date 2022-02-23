@@ -9,6 +9,7 @@
 :root {
     font-size: 62.5%;
     --COLOR-SHADOW-4: #1b1b1b9d;
+    --COLOR-SIDEBAR-BG: #f4f4f4;
 }
 
 html {
@@ -20,12 +21,13 @@ body {
     background-color: var(--COLOR-SHADOW-PRIMARY-50);
 }
 
-html[data-theme="dark"] body{
+html[data-theme="dark"] body {
     background-color: var(--OFF-WHITE);
-    --WHITE: #111111
+    --WHITE: #111111;
+    --COLOR-SIDEBAR-BG: #232323;
 }
 
-html[data-theme="dark"] .auth-container{
+html[data-theme="dark"] .auth-container {
     box-shadow: 0 5px 1rem 0px var(--OFF-WHITE);
 }
 
@@ -56,8 +58,6 @@ html[data-theme="dark"] .auth-container{
 }
 
 .grand-nav {
-    position: sticky;
-    top: 0;
     grid-area: navbar;
     z-index: 2;
 }
@@ -83,7 +83,7 @@ html[data-theme="dark"] .auth-container{
     color: var(--OFF-BLACK);
 }
 
-html[data-theme="dark"] .grand-footer{
+html[data-theme="dark"] .grand-footer {
     background-color: var(--COLOR-SHADOW-PRIMARY-400);
 }
 
@@ -209,6 +209,10 @@ html[data-theme="dark"] .grand-footer{
     align-items: baseline;
 }
 
+.sidebar-hidden {
+    display: flex;
+}
+
 /* CUSTOM SLIDER */
 
 .grand-slider-wrapper {
@@ -244,6 +248,12 @@ html[data-theme="dark"] .grand-footer{
 /* ADD THIS VALUE TO UTILITY CLASS LATER */
 .width-45 {
     width: 45rem;
+}
+
+.cart-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 .quantity-wrapper {
@@ -282,12 +292,11 @@ html[data-theme="dark"] .grand-footer{
     align-items: center;
 }
 
-.coupon{
+.coupon {
     text-transform: uppercase;
 }
 
-
-.margin-2{
+.margin-2 {
     margin: 2rem 0;
 }
 
@@ -369,8 +378,59 @@ html[data-theme="dark"] .grand-footer{
 
 /* RESPONSIVE CSS */
 
-@media only screen and (max-width:480px){
-    :root{
+@media only screen and (max-width: 770px) {
+    :root {
+        font-size: 56.25%;
+    }
+
+    .grid-products {
+        grid-template-areas:
+            "navbar navbar"
+            "main main"
+            "footer footer";
+    }
+
+    .cart-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .cart-wrapper .order-checkout {
+        width: 100%;
+        max-width: 45rem;
+    }
+
+    .navbar-responsive .nav-items .btn {
+        display: block;
+    }
+
+    .grand-filter {
+        display: block;
+        position: absolute;
+        height: calc(100% - 6rem);
+        width: auto;
+        top: 6rem;
+        right: 0;
+        z-index: 5;
+        background-color: var(--COLOR-SIDEBAR-BG);
+    }
+
+    .grid-products .navbar-responsive .nav-items .btn {
+        display: none;
+    }
+
+    .grid-products .navbar-responsive .nav-items .nav-hamburger {
+        display: block;
+    }
+
+    .sidebar-hidden {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    :root {
         font-size: 50%;
     }
 }
